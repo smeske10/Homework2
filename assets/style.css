@@ -8,7 +8,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 body {
     display: flex;
     flex-direction: column;
@@ -120,9 +120,6 @@ main {
     background-color: var(--dark);
 } 
 
-h2 {
-}
-
 p {
     margin-top: 12px;
 }
@@ -178,6 +175,7 @@ p {
     margin: 1%;
     background-color: var(--dark);
     color: white;
+    border-radius: 10px;
 }
 
 .article-flexbox-button:hover {
@@ -188,6 +186,26 @@ p {
 .article-flexbox-button:active {
     color: var(--popFade);
     box-shadow: inset -5px -5px 3px var(--popFade);
+}
+
+.article-flexbox-button-submit {
+    height:40px;
+    min-width: 18%;
+    margin: 1%;
+    margin-left: 100px;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 10px;
+}
+
+.article-flexbox-button-submit:hover {
+    box-shadow: 5px 5px 2px var(--pop);
+    color: var(--pop);
+}
+
+.article-flexbox-button-submit:active {
+    color: var(--popFade);
+    box-shadow: inset -2px -2px 1px var(--popFade);
 }
 
 .interests #contactMe {
