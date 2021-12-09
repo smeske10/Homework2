@@ -14,31 +14,70 @@
     <header>
         <h1> SamMeske.com</h1>
         <nav>
-            <ul>  
-                <a href="#About">About Me</a>
+            <ul>
+                <a href="#about">About Me</a>
                 <div class="drop">
                     <button>Work</button>
                     <div class="drop-content">
-                        <a href="#">Crypto</a>
-                        <a href="#">Entrepreneurship</a>
-                        <a href="#">Healthcare</a>
-                        <a href="#">Data & Research</a>
+                        <a href="#crypto">Blockchain</a>
+                        <a href="#business">Entrepreneurship</a>
+                        <a href="#healthcare">Healthcare</a>
+                        <a href="#research">Data & Research</a>
                     </div>
                 </div>
-                <a href="#">Contact Me</a>
-                <a href="#">My CV</a>
+                <a href="#contactMe">Contact Me</a>
+                <a href="#cv">My CV</a>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-        <div class="#About">
-            <span class="scroll-to" data-label="scroll-to: #About" data-link="#About">
-                <a name="About"></a>
-            </span>
+    <main class="background">
+        <div class="banner">
+            <img class="profilePic" src="./assets/banner/Me in the Library.jpg"/>
+            <p class="banner-container">The world as we know it continues to evolve and grow exponentially -
+                tech, finance, business, healthcare and </p>
         </div>
+        <section class="interests" id="#about">
+            <h2>About Me</h2>
+                <p>Hello, my name is Sam Meske. I'm a 29-year-old medical department manager, founder of two startups, a crypto-entusiast, and a software engineer from Philadelphia, PA.
+                    I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in those formable years, but that doesn't mean I didn't have my own unique struggles...
+                    I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling.
+                </p>
+                <p> I thrive on knowledge and learning.
+                    Taking on new challenges always excites me. </p>
+        </section>
 
+        <section class="interests" id="#crypto">
+            <h2>Blockchain & the Financial Revolution</h2>
+
+            <article class="article-flexbox">
+                <button class="article-flexbox-button">My Beliefs</button>
+                <button class="article-flexbox-button">How does blockchain work?</button>
+                <button class="article-flexbox-button">What is changing with the legacy system?</button>
+                <button class="article-flexbox-button">Is blockchain the future?</button>
+                <button class="article-flexbox-button">Blockchain Engineering</button>
+            </article>
+        </section>
+
+        <section class="interests" id="#business">
+            <h2>Entrepreneurship</h2>
+        </section>
+
+        <section class="interests" id="#healthcare">
+            <h2>Healthcare</h2>
+        </section>
+
+        <section class="interests" id="#research">
+            <h2>My Research</h2>
+        </section>
+
+        <section class="interests" id="#contactMe">
+            <h2>Contact Me!</h2>
+        </section>
+
+        <section class="interests" id="#cv">
+            <h2>My CV</h2>
+        </section>
     </main>
 
 </body>

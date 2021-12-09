@@ -1,7 +1,8 @@
 :root {
-    --dark: rgba(10, 23, 59, 0.849);
+    --dark: rgb(4, 9, 22);
     --light: rgba(226, 226, 226, 0.986);
     --pop: rgb(101, 255, 134);
+    --popFade: rgba(101, 255, 134, 0.466);
 }
 
 body {
@@ -19,6 +20,7 @@ header {
     padding: 20px;
     background-color: var(--dark);
     color: var(--light);
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -107,3 +109,94 @@ button {
     background-color: var(--dark);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+h2 {
+}
+
+p {
+    margin-top: 12px;
+}
+
+.background {
+    background: url("./banner/Network.jpg") no-repeat center fixed;     
+    background-size: cover;}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container {
+    max-width: 600px;
+    min-height: 200px;
+    padding: 10px;
+    background-color: var(--dark);
+}
+
+.banner p {
+    color: white;
+    height: 400px
+}
+
+.profilePic {
+    width: 600px;
+    height: auto;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin: 5px;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 10px;
+}
+
+.article-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-flexbox-button{
+    width: 18%;
+    height: 100px;
+    margin: 1%;
+    background-color: var(--dark);
+    color: white;
+}
+
+.article-flexbox-button:hover {
+    box-shadow: 10px 10px 5px var(--pop);
+    color: var(--pop);
+}
+
+.article-flexbox-button:active {
+    color: var(--popFade);
+    box-shadow: inset -5px -5px 3px var(--popFade);
+}
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    
+    }
+    
+    @media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+    }
+    
+    @media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    }
