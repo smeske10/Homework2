@@ -5,6 +5,10 @@
     --popFade: rgba(101, 255, 134, 0.466);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     display: flex;
     flex-direction: column;
