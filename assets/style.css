@@ -113,6 +113,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--dark);
 } 
 
 h2 {
@@ -139,11 +140,10 @@ p {
     max-width: 600px;
     min-height: 200px;
     padding: 10px;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .banner p {
-    color: white;
     height: 400px
 }
 
@@ -169,7 +169,7 @@ p {
 }
 
 .article-flexbox-button{
-    width: 18%;
+    min-width: 18%;
     height: 100px;
     margin: 1%;
     background-color: var(--dark);
@@ -184,6 +184,32 @@ p {
 .article-flexbox-button:active {
     color: var(--popFade);
     box-shadow: inset -5px -5px 3px var(--popFade);
+}
+
+.interests #contactMe {
+    justify-content: center;
+    align-self: center;
+}
+
+form {
+max-width: 400px;
+align-self: center;
+}
+
+.flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+}
+
+.text-input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.text-input, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
 }
 
 @media screen and (max-width: 991px) {

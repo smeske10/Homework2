@@ -17,7 +17,7 @@
             <ul>
                 <a href="#about">About Me</a>
                 <div class="drop">
-                    <button>Work</button>
+                    <button>My Work &#9660</button>
                     <div class="drop-content">
                         <a href="#crypto">Blockchain</a>
                         <a href="#business">Entrepreneurship</a>
@@ -31,7 +31,8 @@
         </nav>
     </header>
 
-    <main class="background">
+    <main> 
+        <!-- class="background" on Blockchain page-->
         <div class="banner">
             <img class="profilePic" src="./assets/banner/Me in the Library.jpg"/>
             <p class="banner-container">The world as we know it continues to evolve and grow exponentially -
@@ -61,18 +62,58 @@
 
         <section class="interests" id="#business">
             <h2>Entrepreneurship</h2>
+            <article class="article-flexbox">
+                <button class="article-flexbox-button">Idol Networking Company</button>
+                <button class="article-flexbox-button">Philosophy</button>
+                <button class="article-flexbox-button">Lessons Learned</button>
+                <button class="article-flexbox-button">Automation & AI</button>
+                <button class="article-flexbox-button">Software Development</button>
+            </article>
         </section>
 
         <section class="interests" id="#healthcare">
             <h2>Healthcare</h2>
+            <article class="article-flexbox">
+                <button class="article-flexbox-button">COVID-19</button>
+                <button class="article-flexbox-button">Women's Health</button>
+                <button class="article-flexbox-button">Disparities in Care</button>
+                <button class="article-flexbox-button">Healthcare Administration</button>
+                <button class="article-flexbox-button">Tech in Healthcare</button>
+            </article>
         </section>
 
         <section class="interests" id="#research">
             <h2>My Research</h2>
+            <article class="article-flexbox">
+                <button class="article-flexbox-button">Data Dashboards</button>
+                <button class="article-flexbox-button">Research Methods</button>
+                <button class="article-flexbox-button">Statistics</button>
+                <button class="article-flexbox-button">Population Health</button>
+                <button class="article-flexbox-button">References</button>
+            </article>
         </section>
 
         <section class="interests" id="#contactMe">
             <h2>Contact Me!</h2>
+            <form>
+                <p>
+                    <label for="username">Name:</label>
+                    <input type="text-input" id="username" type="text" placeholder="First Last"> 
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text-input" id="email" type="text" placeholder="me@example.com"> 
+                </p>
+                <p class="flex-row">
+                    <label for="interests">I'm interested in: </label>
+                    <select id="interests">
+                        <option selected>Blockchain & the Financial Revolution</option>
+                        <option>Entrepreneurship</option>
+                        <option>Healthcare</option>
+                        <option>Research</option>
+                    </select>
+                </p>
+            </form>
         </section>
 
         <section class="interests" id="#cv">
