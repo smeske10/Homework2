@@ -5,7 +5,7 @@
     --popFade: rgba(101, 255, 134, 0.466);
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
   }
 
@@ -29,26 +29,7 @@ header {
 
 h1 {
     font-size: 200%;
-    color: var(--light);
-}
-
-nav {
-    overflow: hidden;
-}
-
-nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    font-size: 125%;
+    color: var(--dark);
 }
 
 nav ul {
@@ -57,9 +38,9 @@ nav ul {
 
 nav ul a:hover {
     color: var(--pop);
-}
+} */
 
-
+/* 
 button {
     float: left;
     overflow: hidden;
@@ -232,19 +213,19 @@ align-self: center;
     padding: 1%;
     outline: none;
     border: 1.2px solid #b9C6ae;
-}
+/* } */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     /* start of large tablet styles */
     
-    }
+    /* } */
     
-    @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) { */
     /* start of medium tablet styles */
     
-    }
+    /* } */
     
-    @media screen and (max-width: 479px) {
+    /* @media screen and (max-width: 479px) { */
     /* start of phone styles */
     
-    }
+    /* } */
