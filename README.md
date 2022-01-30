@@ -13,3 +13,5 @@ This web page is my portfolio. There is a brief About Me section describing my l
 # To Do
 - Add content to articles
 - Add javascript functionality for transitions/scroll to sections
+
+<img src="./assets/myPortfolio.jpg" alt="instagram">
