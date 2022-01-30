@@ -17,137 +17,206 @@
 
 </head>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top m-2">
+    <a class="navbar-brand" href="#">
+        <h1> SamMeske.com</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    My Work
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item p-2" href="#">Blockchain</a>
+                    <a class="dropdown-item p-2" href="#">Entrepreneurship</a>
+                    <a class="dropdown-item p-2" href="#">Healthcare</a>
+                    <a class="dropdown-item p-2" href="#">Data & Research</a>
+                </div>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <a class="navbar-brand" href="#">
-                <h1> SamMeske.com</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          My Work
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Blockchain</a>
-                          <a class="dropdown-item" href="#">Entrepreneurship</a>
-                          <a class="dropdown-item" href="#">Healthcare</a>
-                          <a class="dropdown-item" href="#">Data & Research</a>
+        <!-- Banner image and welcome statement -->
+        <div class="container-fluid mb-2" id="banner">
+            <div class="row align-items-start">
+                <div class="col-9" id="banner-image">
+                    <img class="img-fluid" src="./assets/banner/myPortfolioPicture.png" alt="My Profile Picture" />
+                </div>
+                <div class="col-3 sticky-top">
+                    <section class="me-2 bg-light" id="myLinks">
+                        <p class="h2 text-center border-bottom">Find Me Online</p> <br>
+                        <div class="ps-5">
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/linkedin.jpg" alt="instagram">
+                            <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/">Sam Meske, MS, MBA</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/github.jpg" alt="instagram">
+                            <a href="https://github.com/smeske10">smeske10</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/instagram.jpg" alt="instagram">
+                            <a href="instagram.com/sammeske">@sammeske</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/instagram.jpg" alt="instagram">
+                            <a href="instagram.com/sammeske">@sammeske</a>
+                            <br>
+                            <br>
                         </div>
-                      </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    </section>
+                </div>
             </div>
-    </nav>
-
-    <main>
-        <!-- class="background" on Blockchain page-->
-        <div class="banner">
-            <img class="profilePic" src="./assets/banner/Me in the Library.jpg" />
-            <p class="banner-container">The world as we know it continues to evolve and grow exponentially -
-                tech, finance, business, healthcare and </p>
         </div>
-
-        <section class="interests" id="#about">
-            <h2>About Me</h2>
-            <p>Hello, my name is Sam Meske. I'm a 29-year-old medical department manager, founder of two startups, a
-                crypto-entusiast, and a software engineer from Philadelphia, PA.
-                I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in those
-                formable years, but that doesn't mean I didn't have my own unique struggles...
-                I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling.
-            </p>
-            <p> I thrive on knowledge and learning.
-                Taking on new challenges always excites me. </p>
-        </section>
-
-        <section class="interests" id="crypto">
-            <h2>Blockchain & the Financial Revolution</h2>
-
-            <article class="article-flexbox">
-                <button class="article-flexbox-button">My Beliefs</button>
-                <button class="article-flexbox-button">How does blockchain work?</button>
-                <button class="article-flexbox-button">What is changing with the legacy system?</button>
-                <button class="article-flexbox-button">Is blockchain the future?</button>
-                <button class="article-flexbox-button">Blockchain Engineering</button>
-            </article>
-        </section>
-
-        <section class="interests" id="business">
-            <h2>Entrepreneurship</h2>
-            <article class="article-flexbox">
-                <button class="article-flexbox-button">Idol Networking Company</button>
-                <button class="article-flexbox-button">Philosophy</button>
-                <button class="article-flexbox-button">Lessons Learned</button>
-                <button class="article-flexbox-button">Automation & AI</button>
-                <button class="article-flexbox-button">Software Development</button>
-            </article>
-        </section>
-
-        <section class="interests" id="healthcare">
-            <h2>Healthcare</h2>
-            <article class="article-flexbox">
-                <button class="article-flexbox-button">COVID-19</button>
-                <button class="article-flexbox-button">Women's Health</button>
-                <button class="article-flexbox-button">Disparities in Care</button>
-                <button class="article-flexbox-button">Healthcare Administration</button>
-                <button class="article-flexbox-button">Tech in Healthcare</button>
-            </article>
-        </section>
-
-        <section class="interests" id="research">
-            <h2>My Research</h2>
-            <article class="article-flexbox">
-                <button class="article-flexbox-button">Data Dashboards</button>
-                <button class="article-flexbox-button">Research Methods</button>
-                <button class="article-flexbox-button">Statistics</button>
-                <button class="article-flexbox-button">Population Health</button>
-                <button class="article-flexbox-button">References</button>
-            </article>
-        </section>
-
-        <section class="interests" id="contactMe">
-            <h2>Contact Me!</h2>
-            <form>
-                <p>
-                    <label for="username">Name:</label>
-                    <input type="text-input" id="username" type="text" placeholder="First Last">
+        <!-- hero and contact form -->
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row g-lg-5 my-1 py-5 bg-light">
+                <div class="col-lg-7 text-lg-start mb-5">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">The Information Age</h1>
+                    <p class="col-lg-10 fs-4">The world as we know it continues to evolve and grow exponentially. The
+                        Information Age has given us more data than ever to consider - tech, finance, business,
+                        healthcare
+                        and </p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5 mb-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <h2 class="h1 text-center">Contact Me!</h2>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="floatingName" type="text" placeholder="First Last">
+                            <label for="floatingInput">Name:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="floatingInput" placeholder="name@example.com">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label for="interests">I'm interested in: </label>
+                            <br><br><br>
+                            <select class="form-select form-select-lg mb-2" aria-label="Default select">
+                                <option selected>Blockchain & the Financial Revolution</option>
+                                <option value="1">Entrepreneurship</option>
+                                <option value="2">Healthcare</option>
+                                <option value="3">Research</option>
+                            </select>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary px-4">Submit</button>
+                            </div>
+                    </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <main class="bg-light px-4 py-5 w-100">
+            <section class="interests" id="#about">
+                <p class="h2 text-center">About Me</p>
+                <p>Hello, my name is Sam Meske. I'm a 29-year-old department manager, founder of two startups, a
+                    crypto-entusiast, and a software engineer from Philadelphia, PA.
+                    I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in those
+                    formable years, but that doesn't mean I didn't have my own unique struggles...
+                    I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling.
                 </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="text-input" id="email" type="text" placeholder="me@example.com">
-                </p>
-                <p class="flex-row">
-                    <label for="interests">I'm interested in: </label>
-                    <select id="interests">
-                        <option selected>Blockchain & the Financial Revolution</option>
-                        <option>Entrepreneurship</option>
-                        <option>Healthcare</option>
-                        <option>Research</option>
-                    </select>
-                </p>
-                <button class="article-flexbox-button-submit">Submit</button>
-            </form>
-        </section>
+                <p> I thrive on knowledge and learning.
+                    Taking on new challenges always excites me. </p>
+            </section>
 
-        <section class="interests" id="cv">
-            <h2>My CV</h2>
-        </section>
-    </main>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./assets/blockchain/001.jpg" class="d-block w-100" alt="Blockchain Technology">
+                        <div class="carousel-caption d-none d-md-block" id="slides">
+                            <h5>How does blockchain work?</h5>
+                            <p>Blocks of information transferred along a chain and secured with cryptographic algorithms
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./assets/blockchain/002.jpg" class="d-block w-100" alt="Federal Reserve">
+                        <div class="carousel-caption d-none d-md-block" id="slides">
+                            <h5>What is changing with the legacy system?</h5>
+                            <p>Fintech is evolving and cryptocurrencies will revolutionize our world.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" id="slides">
+                        <img src="./assets/blockchain/003.jpg" class="d-block w-100" alt="Network Effect">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Network Effect</h5>
+                            <p>History has taught us about adoptive behaviors, and the same thing is happening with
+                                cryptocurrencies</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" id="slides">
+                        <img src="./assets/blockchain/004.jpg" class="d-block w-100" alt="Smart Contracts">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Blockchain Engineering</h5>
+                            <p>Smart Contracts allow decentralized applications to process transactions safely.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
+            <section class="interests" id="business">
+                <h2>Entrepreneurship</h2>
+                <article class="article-flexbox">
+                    <button class="article-flexbox-button">Idol Networking Company</button>
+                    <button class="article-flexbox-button">Philosophy</button>
+                    <button class="article-flexbox-button">Lessons Learned</button>
+                    <button class="article-flexbox-button">Automation & AI</button>
+                    <button class="article-flexbox-button">Software Development</button>
+                </article>
+            </section>
+
+            <section class="interests" id="healthcare">
+                <h2>Healthcare</h2>
+                <article class="article-flexbox">
+                    <button class="article-flexbox-button">COVID-19</button>
+                    <button class="article-flexbox-button">Women's Health</button>
+                    <button class="article-flexbox-button">Disparities in Care</button>
+                    <button class="article-flexbox-button">Healthcare Administration</button>
+                    <button class="article-flexbox-button">Tech in Healthcare</button>
+                </article>
+            </section>
+
+            <section class="interests" id="research">
+                <h2>My Research</h2>
+                <article class="article-flexbox">
+                    <button class="article-flexbox-button">Data Dashboards</button>
+                    <button class="article-flexbox-button">Research Methods</button>
+                    <button class="article-flexbox-button">Statistics</button>
+                    <button class="article-flexbox-button">Population Health</button>
+                    <button class="article-flexbox-button">References</button>
+                </article>
+            </section>
+
+            <section class="interests" id="cv">
+                <h2>My CV</h2>
+            </section>
+        </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -5,6 +5,46 @@
     --popFade: rgba(101, 255, 134, 0.466);
 }
 
+body {
+    background-color: var(--dark);
+}
+
+.navbar {
+    border-radius: 10px;
+}
+
+#banner {
+    max-height: 910px;
+    width: 100%;
+    margin: 10px;
+}
+
+#banner-image {
+    height: 100%;
+    padding: 0px;
+}
+
+.row {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#myLinks {
+    height: 100%;
+}
+
+main {
+    padding: 5% 20%;
+}
+
+#slides {
+    background-color: black;
+    opacity: 80%;
+}
 /* html {
     scroll-behavior: smooth;
   }
