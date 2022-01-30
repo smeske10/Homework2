@@ -5,7 +5,78 @@
     --popFade: rgba(101, 255, 134, 0.466);
 }
 
-html {
+body {
+    /* background-color: var(--dark); */
+}
+
+.navbar {
+    border-radius: 10px;
+}
+
+#banner {
+    max-height: 910px;
+    width: 100%;
+    margin: 10px;
+}
+
+#banner-image {
+    height: 100%;
+    padding: 0px;
+}
+
+#banner-text {
+    background-color: rgb(51, 51, 51);
+    opacity: 80%;
+    max-width: 30%;
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 36px;
+}
+
+#banner-text-info {
+    background-color: rgb(51, 51, 51);
+    opacity: 80%;
+    color: white;
+    font-family: serif;
+    text-align: start;
+    font-size: 20px;
+}
+
+.row {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#myLinks {
+    height: 100%;
+}
+
+main {
+    padding: 5% 20%;
+}
+
+#slides {
+    background-color: rgb(51, 51, 51);
+    opacity: 80%;
+    color: white;
+    text-align: center;
+}
+
+.card-text {
+    display: none;
+}
+
+.card {
+    width: 25%;
+}
+
+/* html {
     scroll-behavior: smooth;
   }
 
@@ -29,26 +100,7 @@ header {
 
 h1 {
     font-size: 200%;
-    color: var(--light);
-}
-
-nav {
-    overflow: hidden;
-}
-
-nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    font-size: 125%;
+    color: var(--dark);
 }
 
 nav ul {
@@ -57,9 +109,9 @@ nav ul {
 
 nav ul a:hover {
     color: var(--pop);
-}
+} */
 
-
+/* 
 button {
     float: left;
     overflow: hidden;
@@ -232,19 +284,19 @@ align-self: center;
     padding: 1%;
     outline: none;
     border: 1.2px solid #b9C6ae;
-}
+/* } */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     /* start of large tablet styles */
     
-    }
+    /* } */
     
-    @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) { */
     /* start of medium tablet styles */
     
-    }
+    /* } */
     
-    @media screen and (max-width: 479px) {
+    /* @media screen and (max-width: 479px) { */
     /* start of phone styles */
     
-    }
+    /* } */

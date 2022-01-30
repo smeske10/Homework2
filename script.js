@@ -13,5 +13,16 @@ function myFunction() {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
-  }
-}
+  };
+};
+
+var myCarousel = document.querySelector('#carousel');
+var carousel = new bootstrap.Carousel((myCarousel, {
+  interval: 2000,
+  wrap: false
+}));
+
+myCarousel.addEventListener('slide.bs.carousel', function () {
+  // do something...
+  next;
+})
