@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
 }
 
 .navbar {
@@ -22,6 +22,26 @@ body {
 #banner-image {
     height: 100%;
     padding: 0px;
+}
+
+#banner-text {
+    background-color: rgb(51, 51, 51);
+    opacity: 80%;
+    max-width: 30%;
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 36px;
+}
+
+#banner-text-info {
+    background-color: rgb(51, 51, 51);
+    opacity: 80%;
+    color: white;
+    font-family: serif;
+    text-align: start;
+    font-size: 20px;
 }
 
 .row {
@@ -42,9 +62,20 @@ main {
 }
 
 #slides {
-    background-color: black;
+    background-color: rgb(51, 51, 51);
     opacity: 80%;
+    color: white;
+    text-align: center;
 }
+
+.card-text {
+    display: none;
+}
+
+.card {
+    width: 25%;
+}
+
 /* html {
     scroll-behavior: smooth;
   }
