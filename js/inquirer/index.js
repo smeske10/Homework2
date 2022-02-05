@@ -72,3 +72,6 @@ inquirer
             console.log('Your article has been published')
         }
     )})
+    .then((data) => {
+        
+    })
