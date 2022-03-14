@@ -19,20 +19,19 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top m-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">
         <h1> SamMeske.com</h1>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="navToggle">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item dropdown">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
                 <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item dropdown">
@@ -56,24 +55,24 @@
     </div>
 </nav>
 
-<body>
+<body class="mt-5 py-3">
     <!-- Banner image and welcome statement -->
     <div class="container-fluid mb-2" id="banner">
-        <div class="row align-items-start">
-            <div class="col-8" id="banner-image">
+        <div class="row align-items-start d-flex flex-wrap">
+            <div class="col-lg-8" id="banner-image">
                 <img class="img-fluid" src="./assets/banner/myPortfolioPicture.png" alt="My Profile Picture" />
                 <div class="position-absolute top-0 end-0 mt-5 me-5 p-3" id="banner-text">Hi, I'm Sam Meske. <br><br>
                     <p id="banner-text-info"> I'm a passionate startup founder, crypto-entusiast, and software engineer
                         from Philadelphia, PA.</p>
                 </div>
             </div>
-            <div class="col-3 ms-n2">
-                <section class="me-2 bg-light" id="myLinks">
-                    <p class="h2 text-center border-bottom">Find Me Online</p> <br>
+            <div class="col-lg-4 ms-n2">
+                <section class="me-2 bg-light w-100" id="myLinks">
+                    <h2 class="text-center border-bottom">Find Me Online</h2> <br>
                     <div class="ps-5">
                         <br>
                         <img class="w-25" src="./assets/socialmedia/linkedin.jpg" alt="LinkedIn">
-                        <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/">Sam Meske, MS, MBA</a>
+                        <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/">Sam Meske</a>
                         <br>
                         <br>
                         <img class="w-25" src="./assets/socialmedia/github.jpg" alt="Github">
@@ -91,9 +90,9 @@
                     </div>
                 </section>
                 <!-- hero and contact form -->
-                <div class="me-2 mt-2">
+                <div class="me-2 w-100">
                     <form class="p-4 p-md-5 border rounded-3 bg-light">
-                        <h2 class="h1 text-center">Contact Me!</h2>
+                        <h2 class="text-center">Contact Me!</h2>
                         <div class="form-floating mb-3">
                             <input class="form-control" id="floatingName" type="text" placeholder="First Last">
                             <label for="floatingInput">Name:</label>
@@ -105,7 +104,7 @@
                         <div class="form-floating mb-3">
                             <label for="interests">I'm interested in: </label>
                             <br><br><br>
-                            <select class="form-select form-select-lg mb-2" aria-label="Default select">
+                            <select class="form-select form-select-lg " aria-label="Default select">
                                 <option selected>Blockchain & Finance</option>
                                 <option value="1">Entrepreneurship</option>
                                 <option value="2">Healthcare</option>
@@ -116,33 +115,56 @@
                             </div>
                     </form>
                 </div>
-                </section>
             </div>
         </div>
     </div>
 
-    <div class="container col-10 px-4 py-5">
-
-        <div class="row g-lg-5 my-1 py-5 bg-light">
+    <div class="container col-sm-12 col-10 px-4 py-5">
+        <div class="row g-lg-5 my-1 py-5 bg-light justify-content-center">
             <div class="text-lg-start mb-5">
                 <section class="interests">
-                    <p class="display-4 fw-bold lh-1 mb-3 text-center">About Me</p>
-                    <p class="fs-4 text-center my-5">
+                    <h2 class="fw-bold lh-1 mb-3 text-center" id="about">About Me</h2>
+                    <p class="my-5">
                         I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in
-                        those
-                        formable years, but that doesn't mean I didn't have my own unique struggles...
-                        I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling. I thrive on knowledge and learning.
-                        Taking on new challenges always excites me. </p>
+                        those formable years, but that doesn't mean I didn't have my own unique struggles...
+                        I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling. I thrive on knowledge and learning and
+                        taking on new challenges always excites me. <br><br> I earned my Bachelor's in Biology from Duquesne University in 2014. Afterwards,
+                        I continued my education at Bloomsburg University of Pennsylvania and earned my Master's in Exercise Science in 2016. 
+                        Under my faculty mentor, I developed an interest in research and completed my thesis of muscle activation patterns with different kinetic forms. 
+                        <br><br> In 2014, my best friend and I started a for-students, by-students ride sharing and food delivery service called ZoomU.
+                        After developing the business proposal, we successfully secured $60,000 in funding to develop the idea. Over the next 2 years, we established a Limited Liability Company
+                        , worked collaboratively with international developers to build our Minimum Viable Product (MVP), and began onboarding users and independent contractors.
+                        in our first year in operation, we served over 3,000 orders to 1,600 users with a team of 10 drivers and developed programs to scale.
+                        After the first year, we struggled to get VC funding and retain drivers - because who knew college kids would rather be social than work on weekends?!
+                        Through many trials and tribulations, we decided to halt operations in 2017 to pursue other ventures, but the lessons learned have stuck with me.  
+                        <br><br> The transferrable skills and interests landed me my first career-building opportunity as a Program Coordinator for the Institute for Concussion Services
+                        at Bloomsburg University. In partnership with the Department of Defense and NCAA, Bloomsburg University screened and monitored
+                        over 800 student athletes for cognitive and behavioral traits before and after traumatic brain injuries and
+                        established a new clinical program in conjunction with the athletic training department. <br><br>As I continued to support the 
+                        NCAA and it's athletes, I continued my education to earn a Master's in Business Administration from Bloomsburg University in 2020. 
+                        This experience changed my mission, vision, and values forever. I learned the importance of ledgers and automated systems. In 2018, I developed a new obsession,
+                        Blockchain, Cryptocurrency and Web 3.0. Over the next 3 years, I studied the inner workings of blockchain technology and read over 300 white papers to understand
+                        the up-and-coming technologies in the space and their respective use cases. <br><br> While I continued my studies in blockchain technologies, I moved to Philadelphia 
+                        for an opportunity in Healthcare. Through 3 years at Main Line Health, I progressed from a Research Assistant studying Population Health and Obstetrics, to a Project Manager studying 
+                        the effects of cannabinoids on chemotherapy-induced peripheral neuropathy, and eventually to the Business Manager for the Department of OBGYN where I managed day-to-day 
+                        operations of the administration for 4 hospitals, 120 doctors, 500 nurses, and 8,000 mothers delivering babies annually. <br><br>
+                        While working in healthcare administration, one of the biggest frustrations was organizational change management and process automation. I realized the shortcoming
+                        of the healthcare industries technological developments, which extended from my experience as the Chief Operating Officer of a startup company who paid tens of thousands to develop an application.
+                        So I enrolled in a Full Stack Developer Bootcamp with the University of Pennsylvania to pursue my dream of contributing to the continued development of technology, especially blockchain technology.
+                        <br><br> As the world continues to digitize information and processes, my dream is to contribute to the advancement of technology to create a better future for our kin.
+                        My hope is that blockchain technology will transform the economic fabric of our society, giving fair and free opportunity to everyone while maintaining transparent
+                        accountability from governments and elites.
+                    </p>
                 </section>
-        <h1 class="display-4 fw-bold lh-1 mb-3 text-center">The Information Age</h1>
-        <p class="fs-4 text-center my-5">The world as we know it continues to evolve and grow exponentially. The
+        <h1 class="fw-bold lh-1 mb-3 text-center">The Information Age</h1>
+        <p class="text-center my-5">The world as we know it continues to evolve and grow exponentially. The
             Information Age has given us more data than ever to consider - tech, finance, business, and
             healthcare are incrementally moving towards automation and it will change our lives.</p>
                 <div class="container container-fluid col-12">
                     <!-- Software Development -->
-                    <div class="row w-100">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center">Software Development</h2>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
+                    <div class="row w-100 justify-content-center">
+                        <h2 class="fw-bold lh-1 mb-3 text-center">Software Development</h2>
+                        <div class="card m-2" style="width: 18rem; border: none;"><a
                                 href="https://smeske10.github.io/Password-Generator/">
                                 <img src="./assets/development/Password Generator.jpg" class="card-img-top"
                                     alt="Blockchain Technology">
@@ -151,7 +173,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
+                        <div class="card m-2" style="width: 18rem; border: none;"><a
                                 href="https://smeske10.github.io/Weather-Dashboard/">
                                 <img src="./assets/development/Weather Dashboard.png" class="card-img-top"
                                     alt="Federal Reserve">
@@ -160,7 +182,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
+                        <div class="card m-2" style="width: 18rem; border: none;"><a
                                 href="https://britt-klose.github.io/Project-1-griffins/index.html">
                                 <img src="./assets/development/Travel Planner.png" class="card-img-top"
                                     alt="Federal Reserve">
@@ -171,14 +193,14 @@
                         </div>
                     </div> <br><br>
                     <!-- Blockchain & the Financial Revolution -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="blockchain">Blockchain & the Financial Revolution</h2>
+                    <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="blockchain">Blockchain & the Financial Revolution</h2>
                         <div>
                             <p class="text-center">Blocks of information transferred along a chain and secured with
                                 cryptographic algorithms. Fintech is evolving and cryptocurrencies will revolutionize
                                 ourworld. History has taught us about adoptive behaviors, and the same thing is
                                 happening with cryptocurrencies. Smart Contracts allow decentralized applications to
-                                processtransactions safely.</p>
+                                process transactions safely.</p>
                         </div>
                         <div class="card m-2" style="width: 18rem; border: none;">
                             <img src="./assets/blockchain/blockchaintechnology.jpg" class="card-img-top" alt="Blockchain Technology">
@@ -205,11 +227,9 @@
                             </div>
                         </div>
                     </div> <br><br>
-
-
                     <!-- Entrepreneurship -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="entrepreneurship">Entrepreneurship</h2>
+                    <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="entrepreneurship">Entrepreneurship</h2>
                         <div class="card m-2" style="width: 18rem; border: none;">
                             <img src="./assets/entrepreneurship/philosophy.jpg" class="card-img-top" alt="Blockchain Technology">
                             <div class="card-body" id="slides">
@@ -241,8 +261,8 @@
                         </div>
                     </div> <br><br>
                     <!-- Healthcare -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="healthcare">Healthcare</h2>
+                    <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="healthcare">Healthcare</h2>
                         <div class="card m-2" style="width: 18rem; border: none;">
                             <img src="./assets/healthcare/healthcare administration.jpg" class="card-img-top" alt="Healthcare Administration">
                             <div class="card-body" id="slides">
@@ -270,14 +290,14 @@
                     </div><br><br>
                     <!-- CV -->
                     <section class="text-center" id="cv">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="cv">My CV</h2> <br><br>
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="cv">My CV</h2> <br><br>
                         <iframe
-                            src="file:///C:/Users/smesk/OneDrive/Desktop/CURRICULUM%20VITAE%20-%20Sam%20Meske,%20MS,%20MBA.pdf"
-                            width="60%" height="600px"></iframe>
+                            src="assets\CURRICULUM VITAE - Sam Meske MS MBA.pdf"
+                            width="80%" height="600px"></iframe>
                     </section>
                     <!-- my Research -->
-                    <div class="mx-5 p-5">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="research">My Research</h2> <br>
+                    <div class="mx-5">
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="research">My Research</h2> <br>
                         <a
                             href="https://www.researchgate.net/profile/Sam-Meske">https://www.researchgate.net/profile/Sam-Meske</a><br><br>
                         <p>Weiss, M, Hibbs, J, Buckley, M…Meske, S et al. (2021) A Coala-T survey of breast cancer
@@ -323,8 +343,6 @@
                             isokinetic exercise. European Journal of Sports Science.
                         </p>
                     </div>
-
-
                 </div>
             </div>
         </div>

@@ -1,302 +1,100 @@
 :root {
-    --dark: rgb(4, 9, 22);
-    --light: rgba(226, 226, 226, 0.986);
-    --pop: rgb(101, 255, 134);
-    --popFade: rgba(101, 255, 134, 0.466);
+  --dark: rgb(4, 9, 22);
+  --light: rgba(226, 226, 226, 0.986);
+  --pop: rgb(101, 255, 134);
+  --popFade: rgba(101, 255, 134, 0.466);
 }
 
 body {
-    /* background-color: var(--dark); */
+  min-width: 100%;
+  font-size: 1vw;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3vw;
 }
 
 .navbar {
-    border-radius: 10px;
+  border-radius: 10px;
+  z-index: 99;
 }
 
 #banner {
-    max-height: 910px;
-    width: 100%;
-    margin: 10px;
+  width: 100%;
+  margin: 10px;
 }
 
 #banner-image {
-    height: 100%;
-    padding: 0px;
+  height: 100%;
+  padding: 0px;
 }
 
 #banner-text {
-    background-color: rgb(51, 51, 51);
-    opacity: 80%;
-    max-width: 30%;
-    color: white;
-    font-family: 'Shrikhand', cursive;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 36px;
+  background-color: rgb(51, 51, 51);
+  max-height: 296px;
+  opacity: 80%;
+  max-width: 30%;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 #banner-text-info {
-    background-color: rgb(51, 51, 51);
-    opacity: 80%;
-    color: white;
-    font-family: serif;
-    text-align: start;
-    font-size: 20px;
+  background-color: rgb(51, 51, 51);
+  opacity: 80%;
+  color: white;
+  font-family: serif;
+  text-align: start;
+  font-size: 1vw;
 }
 
 .row {
-    height: 100%;
+  height: 100%;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #myLinks {
-    height: 100%;
+  height: 100%;
 }
 
 main {
-    padding: 5% 20%;
+  padding: 5% 20%;
 }
 
 #slides {
-    background-color: rgb(51, 51, 51);
-    opacity: 80%;
-    color: white;
-    text-align: center;
+  background-color: rgb(51, 51, 51);
+  opacity: 80%;
+  color: white;
+  text-align: center;
 }
 
 .card-text {
-    display: none;
+  display: none;
 }
 
 .card {
-    width: 25%;
+  width: 25%;
 }
 
-/* html {
-    scroll-behavior: smooth;
-  }
-
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    background-color: var(--light);
+nav.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--dark);
-    color: var(--light);
-    flex-wrap: wrap;
+@media screen and (max-width: 991px) {
 }
 
-h1 {
-    font-size: 200%;
-    color: var(--dark);
+@media screen and (max-width: 767px) {
 }
 
-nav ul {
-    padding: 0 20px;
+@media screen and (max-width: 479px) {
 }
-
-nav ul a:hover {
-    color: var(--pop);
-} */
-
-/* 
-button {
-    float: left;
-    overflow: hidden;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    margin: 0;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.drop {
-    border: none;
-    outline: none;
-    background-color:inherit;
-    font-family: inherit;
-    margin: 0;
-    float: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-.drop-content {
-    display: none;
-    position: absolute;
-    margin-top: 45px;
-    min-width: 250px;
-    background-color: var(--light);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.drop-content a {
-    float: none;
-    position: relative;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: var(--dark);
-    display: block;
-    text-align: left;
-}
-
-.drop:hover .drop-content {
-    display: block;
-  }
-
-.drop-content a:hover {
-    background-color: var(--dark);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--dark);
-} 
-
-p {
-    margin-top: 12px;
-}
-
-.background {
-    background: url("./banner/Network.jpg") no-repeat center fixed;     
-    background-size: cover;}
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 800px;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-container {
-    max-width: 600px;
-    min-height: 200px;
-    padding: 10px;
-    background-color: var(--light);
-}
-
-.banner p {
-    height: 400px
-}
-
-.profilePic {
-    width: 600px;
-    height: auto;
-}
-
-.interests {
-    display: flex;
-    flex-direction: column;
-    width: 97%;
-    margin: 5px;
-    padding: 20px;
-    background-color: var(--light);
-    border-radius: 10px;
-}
-
-.article-flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.article-flexbox-button{
-    min-width: 18%;
-    height: 100px;
-    margin: 1%;
-    background-color: var(--dark);
-    color: white;
-    border-radius: 10px;
-}
-
-.article-flexbox-button:hover {
-    box-shadow: 10px 10px 5px var(--pop);
-    color: var(--pop);
-}
-
-.article-flexbox-button:active {
-    color: var(--popFade);
-    box-shadow: inset -5px -5px 3px var(--popFade);
-}
-
-.article-flexbox-button-submit {
-    height:40px;
-    min-width: 18%;
-    margin: 1%;
-    margin-left: 100px;
-    background-color: var(--dark);
-    color: white;
-    border-radius: 10px;
-}
-
-.article-flexbox-button-submit:hover {
-    box-shadow: 5px 5px 2px var(--pop);
-    color: var(--pop);
-}
-
-.article-flexbox-button-submit:active {
-    color: var(--popFade);
-    box-shadow: inset -2px -2px 1px var(--popFade);
-}
-
-.interests #contactMe {
-    justify-content: center;
-    align-self: center;
-}
-
-form {
-max-width: 400px;
-align-self: center;
-}
-
-.flex-row select {
-    flex: 1 0 0;
-    margin-left: 2%;
-}
-
-.text-input {
-    width: 100%;
-    max-width: 100%;
-}
-
-.text-input, select {
-    padding: 1%;
-    outline: none;
-    border: 1.2px solid #b9C6ae;
-/* } */
-
-/* @media screen and (max-width: 991px) {
-    /* start of large tablet styles */
-    
-    /* } */
-    
-    /* @media screen and (max-width: 767px) { */
-    /* start of medium tablet styles */
-    
-    /* } */
-    
-    /* @media screen and (max-width: 479px) { */
-    /* start of phone styles */
-    
-    /* } */
