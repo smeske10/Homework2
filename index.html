@@ -19,20 +19,20 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top m-2">
-    <a class="navbar-brand" href="#">
-        <h1> SamMeske.com</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="./index.html">
+        SamMeske.com
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu"
+        aria-expanded="false" aria-label="navToggle">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item dropdown">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
                 <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item dropdown">
@@ -41,6 +41,7 @@
                     My Work
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item p-2" href="#software">Software Development</a>
                     <a class="dropdown-item p-2" href="#blockchain">Blockchain</a>
                     <a class="dropdown-item p-2" href="#entrepreneurship">Entrepreneurship</a>
                     <a class="dropdown-item p-2" href="#healthcare">Healthcare</a>
@@ -56,327 +57,428 @@
     </div>
 </nav>
 
-<body>
+<body class="mt-5 py-3">
     <!-- Banner image and welcome statement -->
     <div class="container-fluid mb-2" id="banner">
-        <div class="row align-items-start">
-            <div class="col-8" id="banner-image">
+        <div class="row align-center">
+            <div class="col-lg-8 col-md-12" id="banner-image">
                 <img class="img-fluid" src="./assets/banner/myPortfolioPicture.png" alt="My Profile Picture" />
                 <div class="position-absolute top-0 end-0 mt-5 me-5 p-3" id="banner-text">Hi, I'm Sam Meske. <br><br>
                     <p id="banner-text-info"> I'm a passionate startup founder, crypto-entusiast, and software engineer
                         from Philadelphia, PA.</p>
                 </div>
             </div>
-            <div class="col-3 ms-n2">
-                <section class="me-2 bg-light" id="myLinks">
-                    <p class="h2 text-center border-bottom">Find Me Online</p> <br>
-                    <div class="ps-5">
-                        <br>
-                        <img class="w-25" src="./assets/socialmedia/linkedin.jpg" alt="LinkedIn">
-                        <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/">Sam Meske, MS, MBA</a>
-                        <br>
-                        <br>
-                        <img class="w-25" src="./assets/socialmedia/github.jpg" alt="Github">
-                        <a href="https://github.com/smeske10">smeske10</a>
-                        <br>
-                        <br>
-                        <img class="w-25" src="./assets/socialmedia/twitter.jpg" alt="Twitter">
-                        <a href="https://twitter.com/smeske10">@smeske10</a>
-                        <br>
-                        <br>
-                        <img class="w-25" src="./assets/socialmedia/instagram.jpg" alt="instagram">
-                        <a href="instagram.com/sammeske">@sammeske</a>
-                        <br>
-                        <br>
-                    </div>
-                </section>
-                <!-- hero and contact form -->
-                <div class="me-2 mt-2">
-                    <form class="p-4 p-md-5 border rounded-3 bg-light">
-                        <h2 class="h1 text-center">Contact Me!</h2>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="floatingName" type="text" placeholder="First Last">
-                            <label for="floatingInput">Name:</label>
+
+            <div class="col-lg-4 col-md-12 ms-n2">
+                <div class="row">
+                    <section class="bg-light" id="myLinks">
+                        <h3 class="text-center border-bottom">Find Me Online</h3> <br>
+                        <div class="ps-5">
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/linkedin.jpg" alt="LinkedIn">
+                            <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/">Sam Meske</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/github.jpg" alt="Github">
+                            <a href="https://github.com/smeske10">smeske10</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/twitter.jpg" alt="Twitter">
+                            <a href="https://twitter.com/smeske10">@smeske10</a>
+                            <br>
+                            <br>
+                            <img class="w-25" src="./assets/socialmedia/instagram.jpg" alt="instagram">
+                            <a href="instagram.com/sammeske">@sammeske</a>
+                            <br>
+                            <br>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="text" id="floatingInput" placeholder="name@example.com">
-                            <label for="email">Email:</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <label for="interests">I'm interested in: </label>
-                            <br><br><br>
-                            <select class="form-select form-select-lg mb-2" aria-label="Default select">
-                                <option selected>Blockchain & Finance</option>
-                                <option value="1">Entrepreneurship</option>
-                                <option value="2">Healthcare</option>
-                                <option value="3">Research</option>
-                            </select>
-                            <div class="d-grid gap-2">
-                                <button type="button" class="btn btn-primary px-4">Submit</button>
+                    </section>
+                    <!-- hero and contact form -->
+                    <div id="myLinks">
+                        <form class="px-4 border rounded-3 bg-light">
+                            <h3 class="text-center">Contact Me!</h3>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="floatingName" type="text" placeholder="First Last">
+                                <label for="floatingInput">Name:</label>
                             </div>
-                    </form>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="interests">I'm interested in: </label>
+                                <br><br><br>
+                                <select class="form-select form-select-lg " aria-label="Default select">
+                                    <option selected>Blockchain & Finance</option>
+                                    <option value="1">Entrepreneurship</option>
+                                    <option value="2">Healthcare</option>
+                                    <option value="3">Research</option>
+                                </select>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-primary px-4">Submit</button>
+                                </div>
+                        </form>
+                    </div>
                 </div>
-                </section>
             </div>
         </div>
-    </div>
 
-    <div class="container col-10 px-4 py-5">
+        <div class="container col-12 px-4 py-5 d-flex justify-content-center">
+            <div class="row g-lg-5 my-1 py-5 bg-light" id="content">
+                <div class="text-lg-start mb-5">
+                    <section class="interests">
+                        <h2 class="fw-bold lh-1 mb-3 text-center" id="about">About Me</h2>
+                        <p class="my-5">
+                            I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in
+                            those formable years, but that doesn't mean I didn't have my own unique struggles...
+                            I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling. I thrive
+                            on
+                            knowledge and learning and
+                            taking on new challenges always excites me. <br><br> I earned my Bachelor's in Biology from
+                            Duquesne University in 2014. Afterwards,
+                            I continued my education at Bloomsburg University of Pennsylvania and earned my Master's in
+                            Exercise Science in 2016.
+                            Under my faculty mentor, I developed an interest in research and completed my thesis of
+                            muscle
+                            activation patterns with different kinetic forms.
+                            <br><br> In 2014, my best friend and I started a for-students, by-students ride sharing and
+                            food
+                            delivery service called ZoomU.
+                            After developing the business proposal, we successfully secured $60,000 in funding to
+                            develop
+                            the idea. Over the next 2 years, we established a Limited Liability Company
+                            , worked collaboratively with international developers to build our Minimum Viable Product
+                            (MVP), and began onboarding users and independent contractors.
+                            in our first year in operation, we served over 3,000 orders to 1,600 users with a team of 10
+                            drivers and developed programs to scale.
+                            After the first year, we struggled to get VC funding and retain drivers - because who knew
+                            college kids would rather be social than work on weekends?!
+                            Through many trials and tribulations, we decided to halt operations in 2017 to pursue other
+                            ventures, but the lessons learned have stuck with me.
+                            <br><br> The transferrable skills and interests landed me my first career-building
+                            opportunity
+                            as a Program Coordinator for the Institute for Concussion Services
+                            at Bloomsburg University. In partnership with the Department of Defense and NCAA, Bloomsburg
+                            University screened and monitored
+                            over 800 student athletes for cognitive and behavioral traits before and after traumatic
+                            brain
+                            injuries and
+                            established a new clinical program in conjunction with the athletic training department.
+                            <br><br>As I continued to support the
+                            NCAA and it's athletes, I continued my education and earned a Master's in Business
+                            Administration
+                            from Bloomsburg University in 2020.
+                            This experience changed my mission, vision, and values forever. I learned the importance of
+                            ledgers and automated systems. In 2018, I developed a new obsession,
+                            Blockchain, Cryptocurrency and Web 3.0. Over the next 3 years, I studied the inner workings
+                            of
+                            blockchain technology and read over 300 white papers to understand
+                            the up-and-coming technologies in the space and their respective use cases. <br><br> While I
+                            continued my studies in blockchain technologies, I moved to Philadelphia
+                            for an opportunity in Healthcare. Through 3 years at Main Line Health, I progressed from a
+                            Research Assistant studying Population Health and Obstetrics, to a Project Manager studying
+                            the effects of cannabinoids on chemotherapy-induced peripheral neuropathy, and eventually to
+                            the
+                            Business Manager for the Department of OBGYN where I managed day-to-day
+                            operations of the administration for 4 hospitals, 120 doctors, 500 nurses, and 8,000 mothers
+                            delivering babies annually. <br><br>
+                            While working in healthcare administration, one of the biggest frustrations was
+                            organizational
+                            change management and process automation. I realized the shortcoming
+                            of the healthcare industries technological developments, which extended from my experience
+                            as
+                            the Chief Operating Officer of a startup company who paid tens of thousands to develop an
+                            application.
+                            So I enrolled in a Full Stack Developer Bootcamp with the University of Pennsylvania to
+                            pursue
+                            my dream of contributing to the continued development of technology, especially blockchain
+                            technology.
+                            <br><br> As the world continues to digitize information and processes, my dream is to
+                            contribute
+                            to the advancement of technology to create a better future for our kin.
+                            My hope is that blockchain technology will transform the economic fabric of our society,
+                            giving
+                            fair and free opportunity to everyone while maintaining transparent
+                            accountability from governments and elites.
+                        </p>
+                    </section>
+                    <h1 class="fw-bold lh-1 mb-3 text-center">The Information Age</h1>
+                    <p class="my-5">The world as we know it continues to evolve and grow exponentially. The
+                        Information Age has given us more data than ever to consider - tech, finance, business, and
+                        healthcare are producing the data that keeps us incrementally shifting towards automation. It
+                        will change our lives forever. It's our responsibility to work with technology to create a
+                        better
+                        life for everyone. <br><br>
+                        The blockchain revolution has shown us the power of an immutable ledger, decentralized in
+                        control and encrypted for security. The powers of the world can return to the people in a
+                        trustless system, where no CEO's, Boards, or Governments can hinder development or take shady
+                        backdoor deals.
 
-        <div class="row g-lg-5 my-1 py-5 bg-light">
-            <div class="text-lg-start mb-5">
-                <section class="interests">
-                    <p class="display-4 fw-bold lh-1 mb-3 text-center">About Me</p>
-                    <p class="fs-4 text-center my-5">
-                        I grew up in Bloomsburg, PA to a caring and loving family that provided everything for me in
-                        those
-                        formable years, but that doesn't mean I didn't have my own unique struggles...
-                        I'm the oldest of 4 brothers and have all the cliche markups of an oldest sibling. I thrive on knowledge and learning.
-                        Taking on new challenges always excites me. </p>
-                </section>
-        <h1 class="display-4 fw-bold lh-1 mb-3 text-center">The Information Age</h1>
-        <p class="fs-4 text-center my-5">The world as we know it continues to evolve and grow exponentially. The
-            Information Age has given us more data than ever to consider - tech, finance, business, and
-            healthcare are incrementally moving towards automation and it will change our lives.</p>
-                <div class="container container-fluid col-12">
-                    <!-- Software Development -->
-                    <div class="row w-100">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center">Software Development</h2>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
-                                href="https://smeske10.github.io/Password-Generator/">
-                                <img src="./assets/development/Password Generator.jpg" class="card-img-top"
+                    </p>
+                    <div class="container container-fluid col-12">
+                        <!-- Software Development -->
+                        <div class="row w-100 justify-content-center" id="software">
+                            <h2 class="fw-bold lh-1 mb-3 text-center">Software Development</h2>
+                            <div class="card m-2" style="width: 18rem; border: none;"><a
+                                    href="https://smeske10.github.io/Password-Generator/">
+                                    <img src="./assets/development/Password Generator.jpg" class="card-img-top"
+                                        alt="Blockchain Technology">
+                                    <div class="card-body" id="slides">
+                                        <h5>Password Generator</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;"><a
+                                    href="https://smeske10.github.io/Weather-Dashboard/">
+                                    <img src="./assets/development/Weather Dashboard.png" class="card-img-top"
+                                        alt="Federal Reserve">
+                                    <div class="card-body" id="slides">
+                                        <h5>Weather Dashboard</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;"><a
+                                    href="https://britt-klose.github.io/Project-1-griffins/index.html">
+                                    <img src="./assets/development/Travel Planner.png" class="card-img-top"
+                                        alt="Federal Reserve">
+                                    <div class="card-body" id="slides">
+                                        <h5>Travel Planner</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> <br><br>
+                        <!-- Blockchain & the Financial Revolution -->
+                        <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                            <h2 class="fw-bold lh-1 mb-3 text-center" id="blockchain">Blockchain & the Financial
+                                Revolution
+                            </h2>
+                            <div>
+                                <p>Blocks of information transferred along a chain and secured with
+                                    cryptographic algorithms. Fintech is evolving and cryptocurrencies will
+                                    revolutionize our world. History has taught us about adoptive behaviors, and the
+                                    same thing is
+                                    happening with cryptocurrencies. Smart Contracts allow decentralized applications to
+                                    process transactions safely.</p>
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/blockchain/blockchaintechnology.jpg" class="card-img-top"
                                     alt="Blockchain Technology">
                                 <div class="card-body" id="slides">
-                                    <h5>Password Generator</h5>
+                                    <h5>How does blockchain work?</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
-                                href="https://smeske10.github.io/Weather-Dashboard/">
-                                <img src="./assets/development/Weather Dashboard.png" class="card-img-top"
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/blockchain/fedreserve.jpg" class="card-img-top"
                                     alt="Federal Reserve">
                                 <div class="card-body" id="slides">
-                                    <h5>Weather Dashboard</h5>
+                                    <h5>The broken legacy system?</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card m-2" style="width: 32%; border: none;"><a
-                                href="https://britt-klose.github.io/Project-1-griffins/index.html">
-                                <img src="./assets/development/Travel Planner.png" class="card-img-top"
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/blockchain/network.jpg" class="card-img-top" alt="Network Effect">
+                                <div class="card-body" id="slides">
+                                    <h5>The Network Effect</h5>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/blockchain/smartcontracts.jpg" class="card-img-top"
+                                    alt="Smart Contracts">
+                                <div class="card-body" id="slides">
+                                    <h5>Blockchain Engineering</h5>
+                                </div>
+                            </div>
+                        </div> <br><br>
+                        <!-- Entrepreneurship -->
+                        <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                            <h2 class="fw-bold lh-1 mb-3 text-center" id="entrepreneurship">Entrepreneurship</h2>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/entrepreneurship/philosophy.jpg" class="card-img-top"
+                                    alt="Blockchain Technology">
+                                <div class="card-body" id="slides">
+                                    <h5>Philosophy</h5>
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/entrepreneurship/idol.png" class="card-img-top"
                                     alt="Federal Reserve">
                                 <div class="card-body" id="slides">
-                                    <h5>Travel Planner</h5>
+                                    <h5>Idol Networking Company</h5>
+                                    <p class="card-text"></p>
                                 </div>
-                            </a>
-                        </div>
-                    </div> <br><br>
-                    <!-- Blockchain & the Financial Revolution -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="blockchain">Blockchain & the Financial Revolution</h2>
-                        <div>
-                            <p class="text-center">Blocks of information transferred along a chain and secured with
-                                cryptographic algorithms. Fintech is evolving and cryptocurrencies will revolutionize
-                                ourworld. History has taught us about adoptive behaviors, and the same thing is
-                                happening with cryptocurrencies. Smart Contracts allow decentralized applications to
-                                processtransactions safely.</p>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/blockchain/blockchaintechnology.jpg" class="card-img-top" alt="Blockchain Technology">
-                            <div class="card-body" id="slides">
-                                <h5>How does blockchain work?</h5>
                             </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/blockchain/fedreserve.jpg" class="card-img-top" alt="Federal Reserve">
-                            <div class="card-body" id="slides">
-                                <h5>The broken legacy system?</h5>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/entrepreneurship/lessonslearned.jpg" class="card-img-top"
+                                    alt="Network Effect">
+                                <div class="card-body" id="slides">
+                                    <h5>Lessons Learned</h5>
+                                    <p class="card-text"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/blockchain/network.jpg" class="card-img-top" alt="Network Effect">
-                            <div class="card-body" id="slides">
-                                <h5>The Network Effect</h5>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/entrepreneurship/ai.jpg" class="card-img-top" alt="Smart Contracts">
+                                <div class="card-body" id="slides">
+                                    <h5>Automation & AI</h5>
+                                    <p class="card-text"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/blockchain/smartcontracts.jpg" class="card-img-top" alt="Smart Contracts">
-                            <div class="card-body" id="slides">
-                                <h5>Blockchain Engineering</h5>
+                        </div> <br><br>
+                        <!-- Healthcare -->
+                        <div class="row d-flex w-100 justify-content-center" style="justify-content: space-between;">
+                            <h2 class="fw-bold lh-1 mb-3 text-center" id="healthcare">Healthcare</h2>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/healthcare/healthcare administration.jpg" class="card-img-top"
+                                    alt="Healthcare Administration">
+                                <div class="card-body" id="slides">
+                                    <h5>Healthcare Administration</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div> <br><br>
-
-
-                    <!-- Entrepreneurship -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="entrepreneurship">Entrepreneurship</h2>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/entrepreneurship/philosophy.jpg" class="card-img-top" alt="Blockchain Technology">
-                            <div class="card-body" id="slides">
-                                <h5>Philosophy</h5>
-                                <p class="card-text">
-                                </p>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/healthcare/womens health.jpg" class="card-img-top"
+                                    alt="Women's Health">
+                                <div class="card-body" id="slides">
+                                    <h5>Women's Health</h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/entrepreneurship/idol.png" class="card-img-top" alt="Federal Reserve">
-                            <div class="card-body" id="slides">
-                                <h5>Idol Networking Company</h5>
-                                <p class="card-text"></p>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/healthcare/racial disparity.png" class="card-img-top"
+                                    alt="Disparities in Care">
+                                <div class="card-body" id="slides">
+                                    <h5>Disparities in Care</h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/entrepreneurship/lessonslearned.jpg" class="card-img-top" alt="Network Effect">
-                            <div class="card-body" id="slides">
-                                <h5>Lessons Learned</h5>
-                                <p class="card-text"></p>
+                            <div class="card m-2" style="width: 18rem; border: none;">
+                                <img src="./assets/healthcare/covid19.png" class="card-img-top" alt="COVID-19">
+                                <div class="card-body" id="slides">
+                                    <h5>COVID-19</h5>
+                                </div>
                             </div>
+                        </div><br><br>
+                        <!-- CV -->
+                        <section class="text-center" id="cv">
+                            <h2 class="fw-bold lh-1 mb-3 text-center" id="cv">My CV</h2> <br><br>
+                            <iframe src="assets\CURRICULUM VITAE - Sam Meske MS MBA.pdf" width="80%"
+                                height="600px"></iframe>
+                        </section>
+                        <!-- my Research -->
+                        <div class="mx-5">
+                            <h2 class="fw-bold lh-1 mb-3 text-center" id="research">My Research</h2> <br>
+                            <a
+                                href="https://www.researchgate.net/profile/Sam-Meske">https://www.researchgate.net/profile/Sam-Meske</a><br><br>
+                            <p>Weiss, M, Hibbs, J, Buckley, M…Meske, S et al. (2021) A Coala-T survey of breast cancer
+                                patients use of
+                                cannabis before, during and after treatment. Cancer. CNCR-21-0925.R1 <br><br>
+                                Beaupre, J, Meske, S, & Buckley, M. (2021) Athletic Training and Population Health
+                                Science.
+                                Journal of
+                                Athletic Training. Online Ahead of Print.<br><br>
+                                Beaupre, J, Meske, S, & Buckley, M. (2021) Athletic Trainer-reported prevalence of
+                                mental
+                                health, substance
+                                use, and barriers to health in secondary schools. Journal of Athletic Training. Online
+                                Ahead
+                                of Print.<br><br>
+                                Meske, S, Hazzard, J, Ni, M, Hanson, T, Van Horn, L, & Smith, J. (2018) The Prevalence
+                                of
+                                Traumatic Brain
+                                Injury and On-Campus Service Utilization Among Undergraduate Students. Journal of Head
+                                Trauma
+                                Rehabilitation. Online Ahead of Print.<br><br>
+                                Mookerjee, S, McMahon, M, & Meske, S. (2017) Influence of joint angle and biceps brachii
+                                isometric
+                                contraction intensity on electromyographic and mechanomyographic responses. Advances in
+                                Skeletal Muscle Function Assessment. 1(2), 21-27.<br><br>
+                                Publication (In Preparation)<br><br>
+                                Gobern, J, Hartwell, L, Meske S, & Carlson, E. (2020) Management of Amniotic Fluid
+                                Embolism
+                                in a
+                                Community Healthcare System: A Case Series. American Journal of Obstetrics &
+                                Gynecology.<br><br>
+                                Kennard, K, Ciocca, R, Sabol, J, Carp, N, Meske, S. (2020) Use of PECS II Block in
+                                Partial
+                                Mastectomy for
+                                Improving Postoperative Pain Control and Mitigating Narcotic Use- a Randomized Control
+                                Trial.
+                                American Journal of Surgery.<br><br>
+                                Hazzard, J, Ni, M, Meske, S, Caccese, Eckner, JT, & Buckley, T. (2019) The effects of
+                                sports-related
+                                concussion on clinical reaction-time in student-athletes.<br><br>
+                                Buckley, T, Caccese, J, Hazzard, J, Ni, M, Meske, S, & Eckner, JT. (2019) Clinical
+                                reaction-time correlation to
+                                risk of head injury in student-athletes.<br><br>
+                                Meske, S & Mookerjee, S. (2019) Comparison of EMG responses across handle types during
+                                seated row
+                                exercise. Journal of Strength and Conditioning Research.<br><br>
+                                Mookerjee, S, McMahon, M, & Meske, S. (2018) EMG amplitude-<br><br>to-torque ratios in
+                                males
+                                and females during
+                                isokinetic exercise. European Journal of Sports Science.
+                            </p>
                         </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/entrepreneurship/ai.jpg" class="card-img-top" alt="Smart Contracts">
-                            <div class="card-body" id="slides">
-                                <h5>Automation & AI</h5>
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div> <br><br>
-                    <!-- Healthcare -->
-                    <div class="row d-flex w-100" style="justify-content: space-between;">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="healthcare">Healthcare</h2>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/healthcare/healthcare administration.jpg" class="card-img-top" alt="Healthcare Administration">
-                            <div class="card-body" id="slides">
-                                <h5>Healthcare Administration</h5>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/healthcare/womens health.jpg" class="card-img-top" alt="Women's Health">
-                            <div class="card-body" id="slides">
-                                <h5>Women's Health</h5>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/healthcare/racial disparity.png" class="card-img-top" alt="Disparities in Care">
-                            <div class="card-body" id="slides">
-                                <h5>Disparities in Care</h5>
-                            </div>
-                        </div>
-                        <div class="card m-2" style="width: 18rem; border: none;">
-                            <img src="./assets/healthcare/covid19.png" class="card-img-top" alt="COVID-19">
-                            <div class="card-body" id="slides">
-                                <h5>COVID-19</h5>
-                            </div>
-                        </div>
-                    </div><br><br>
-                    <!-- CV -->
-                    <section class="text-center" id="cv">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="cv">My CV</h2> <br><br>
-                        <iframe
-                            src="file:///C:/Users/smesk/OneDrive/Desktop/CURRICULUM%20VITAE%20-%20Sam%20Meske,%20MS,%20MBA.pdf"
-                            width="60%" height="600px"></iframe>
-                    </section>
-                    <!-- my Research -->
-                    <div class="mx-5 p-5">
-                        <h2 class="display-4 fw-bold lh-1 mb-3 text-center" id="research">My Research</h2> <br>
-                        <a
-                            href="https://www.researchgate.net/profile/Sam-Meske">https://www.researchgate.net/profile/Sam-Meske</a><br><br>
-                        <p>Weiss, M, Hibbs, J, Buckley, M…Meske, S et al. (2021) A Coala-T survey of breast cancer
-                            patients use of
-                            cannabis before, during and after treatment. Cancer. CNCR-21-0925.R1 <br><br>
-                            Beaupre, J, Meske, S, & Buckley, M. (2021) Athletic Training and Population Health Science.
-                            Journal of
-                            Athletic Training. Online Ahead of Print.<br><br>
-                            Beaupre, J, Meske, S, & Buckley, M. (2021) Athletic Trainer-reported prevalence of mental
-                            health, substance
-                            use, and barriers to health in secondary schools. Journal of Athletic Training. Online Ahead
-                            of Print.<br><br>
-                            Meske, S, Hazzard, J, Ni, M, Hanson, T, Van Horn, L, & Smith, J. (2018) The Prevalence of
-                            Traumatic Brain
-                            Injury and On-Campus Service Utilization Among Undergraduate Students. Journal of Head
-                            Trauma
-                            Rehabilitation. Online Ahead of Print.<br><br>
-                            Mookerjee, S, McMahon, M, & Meske, S. (2017) Influence of joint angle and biceps brachii
-                            isometric
-                            contraction intensity on electromyographic and mechanomyographic responses. Advances in
-                            Skeletal Muscle Function Assessment. 1(2), 21-27.<br><br>
-                            Publication (In Preparation)<br><br>
-                            Gobern, J, Hartwell, L, Meske S, & Carlson, E. (2020) Management of Amniotic Fluid Embolism
-                            in a
-                            Community Healthcare System: A Case Series. American Journal of Obstetrics &
-                            Gynecology.<br><br>
-                            Kennard, K, Ciocca, R, Sabol, J, Carp, N, Meske, S. (2020) Use of PECS II Block in Partial
-                            Mastectomy for
-                            Improving Postoperative Pain Control and Mitigating Narcotic Use- a Randomized Control
-                            Trial.
-                            American Journal of Surgery.<br><br>
-                            Hazzard, J, Ni, M, Meske, S, Caccese, Eckner, JT, & Buckley, T. (2019) The effects of
-                            sports-related
-                            concussion on clinical reaction-time in student-athletes.<br><br>
-                            Buckley, T, Caccese, J, Hazzard, J, Ni, M, Meske, S, & Eckner, JT. (2019) Clinical
-                            reaction-time correlation to
-                            risk of head injury in student-athletes.<br><br>
-                            Meske, S & Mookerjee, S. (2019) Comparison of EMG responses across handle types during
-                            seated row
-                            exercise. Journal of Strength and Conditioning Research.<br><br>
-                            Mookerjee, S, McMahon, M, & Meske, S. (2018) EMG amplitude-<br><br>to-torque ratios in males
-                            and females during
-                            isokinetic exercise. European Journal of Sports Science.
-                        </p>
                     </div>
-
-
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">Home</a>
-            </li>
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">About Me</a>
-            </li>
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">Software Development</a>
-            </li>
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">Blockchain</a>
-            </li>
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">Healthcare</a>
-            </li>
-            <li class="nav-item mx-3">
-                <a href="./index.html" style="color: black;">My CV</a>
-            </li>
-        </ul>
-                <div class="text-center">
-                    <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/" src="./assets/socialmedia/linkedin.jpg" alt="instagram">
-                    <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"></a>
-                    
-                    <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/" src="./assets/socialmedia/github.jpg" alt="instagram">
-                    <a href="https://github.com/smeske10"></a>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item mx-3">
+                    <a href="./index.html" style="color: black;">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#about" style="color: black;">About Me</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#software" style="color: black;">Software Development</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#blockchain" style="color: black;">Blockchain</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#entrepreneurship" style="color: black;">Entrepreneurship</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#healthcare" style="color: black;">Healthcare</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#research" style="color: black;">Research</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="cv" style="color: black;">My CV</a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"
+                    src="./assets/socialmedia/linkedin.jpg" alt="instagram">
+                <a href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"></a>
 
-                    <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/" src="./assets/socialmedia/twitter.jpg" alt="instagram">
-                    <a href="instagram.com/sammeske"></a>
+                <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"
+                    src="./assets/socialmedia/github.jpg" alt="instagram">
+                <a href="https://github.com/smeske10"></a>
 
-                    <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/" src="./assets/socialmedia/instagram.jpg" alt="instagram">
-                    <a href="instagram.com/sammeske"></a>
+                <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"
+                    src="./assets/socialmedia/twitter.jpg" alt="instagram">
+                <a href="instagram.com/sammeske"></a>
 
-                </div><br><br>
-        <p class="text-center text-muted">© 2022, Sam Meske</p>
-    </footer>
-    <script src="./js/bootstrap/bootstrap.js"></script>
-    <script src="./js/inquirer/generateHTML.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+                <img style="width: 3%;" href="https://www.linkedin.com/in/sam-meske-ms-mba-735068139/"
+                    src="./assets/socialmedia/instagram.jpg" alt="instagram">
+                <a href="instagram.com/sammeske"></a>
+
+            </div><br><br>
+            <p class="text-center text-muted">© 2022, Sam Meske</p>
+        </footer>
+        <script src="./js/bootstrap/bootstrap.js"></script>
+        <script src="./js/inquirer/generateHTML.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
