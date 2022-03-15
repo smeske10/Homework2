@@ -11,9 +11,12 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-size: 3vw;
+}
+
+h3 {
+  font-size: 2vw;
 }
 
 .navbar {
@@ -90,7 +93,37 @@ nav.sticky {
   top: 0;
 }
 
+#myLinks {
+  width: 100%;
+  display: block;
+  max-height: 480px;
+  height: auto;
+}
+
+#content {
+  width: 70%;
+}
+
+@media screen and (max-width: 1500px) {
+  #myLinks {
+    width: 100%;
+    display: block;
+    max-height: 350px;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  #myLinks {
+    width: 48%;
+    display: row;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  #content {
+    width: 98%;
+  }
 }
 
 @media screen and (max-width: 767px) {
