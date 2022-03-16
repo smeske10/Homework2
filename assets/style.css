@@ -127,6 +127,27 @@ nav.sticky {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    min-width: 100%;
+    font-size: 3vw;
+  }
+
+  h1,
+  h2 {
+    font-size: 9vw;
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  #banner-text {
+    font-size: 2vw;
+  }
+
+  #banner-text-info {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 479px) {
