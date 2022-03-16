@@ -108,6 +108,10 @@ nav.sticky {
   width: 70%;
 }
 
+#socialLinks {
+  width: 3%;
+}
+
 @media screen and (max-width: 1500px) {
   #myLinks {
     width: 100%;
@@ -158,6 +162,10 @@ nav.sticky {
 
   #banner-text-info {
     font-size: 2vw;
+  }
+
+  #socialLinks {
+    width: 10%;
   }
 }
 
