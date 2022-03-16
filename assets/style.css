@@ -55,6 +55,10 @@ h3 {
   font-size: 1vw;
 }
 
+#socials {
+  margin-left: 150px;
+}
+
 .row {
   height: 100%;
 }
@@ -111,6 +115,9 @@ nav.sticky {
     max-height: 350px;
     height: auto;
   }
+  #socials {
+    margin-left: 80px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -121,12 +128,36 @@ nav.sticky {
     margin-top: 1rem;
   }
 
+  #socials {
+    margin-left: 10px;
+  }
+
   #content {
     width: 98%;
   }
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 3vw;
+  }
+
+  h1,
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  #banner-text {
+    font-size: 2vw;
+  }
+
+  #banner-text-info {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 479px) {
