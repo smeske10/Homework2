@@ -72,6 +72,10 @@ img {
   height: 100%;
 }
 
+#submit {
+  width: 100%;
+}
+
 main {
   padding: 5% 20%;
 }
